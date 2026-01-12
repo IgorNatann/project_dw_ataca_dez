@@ -42,6 +42,88 @@
     </index>
    </folder>
   </table>
+  <table id="TAB10" populated="true" UUID="46dcda79-94ab-411a-86df-a5f0949cf1c0" name="DIMENSÃO CLIENTE" objectType="TABLE" physicalName="dim_cliente" >
+   <remarks></remarks>
+   <folder id="FOLTAB101" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL11" populated="true" UUID="a6522ffa-0b8d-4b70-8b3f-56fae687ca96" autoIncrement="false" autoIncrementSequenceName="dim_cliente_id_cliente_seq" defaultValue="" name=" IDENTIFICADOR PRIMÁRIO DE CLIENTE" nullable="0" physicalName="id_cliente" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="e7336325-61e5-41a3-8611-a9ca940a21d5" autoIncrement="false" autoIncrementSequenceName="dim_cliente_cod_cliente_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE CLIENTE" nullable="0" physicalName="cod_cliente" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL13" populated="true" UUID="304db93e-9434-4891-9a2f-4ad7c3c9ce91" autoIncrement="false" autoIncrementSequenceName="dim_cliente_desc_cliente_seq" defaultValue="" name="DESCRITOR DE CLIENTE" nullable="0" physicalName="desc_cliente" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL14" populated="true" UUID="ab004bd3-6b4e-4acb-95cd-e74799d18ac3" autoIncrement="false" autoIncrementSequenceName="dim_cliente_atr_tamanho_cliente_seq" defaultValue="" name="ATRIBUTO TAMANHO DO CLIENTE" nullable="0" physicalName="atr_tamanho_cliente" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL15" populated="true" UUID="2324a10d-1a4d-4749-9726-2f5a7dfdbd54" autoIncrement="false" autoIncrementSequenceName="dim_cliente_cod_cidade_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE CIDADE" nullable="0" physicalName="cod_cidade" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL16" populated="true" UUID="4e120a9d-ac32-4356-9d48-aab1365259a6" autoIncrement="false" autoIncrementSequenceName="dim_cliente_desc_cidade_seq" defaultValue="" name="DESCRITOR DE CIDADE" nullable="0" physicalName="desc_cidade" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL17" populated="true" UUID="74036e18-120c-4cde-a379-7a02aaf1fd05" autoIncrement="false" autoIncrementSequenceName="dim_cliente_cod_estado_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE ESTADO" nullable="0" physicalName="cod_estado" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL18" populated="true" UUID="35c02307-18f9-4a4e-8ec1-e5ab9e430323" autoIncrement="false" autoIncrementSequenceName="dim_cliente_desc_estado_seq" defaultValue="" name="DESCRITOR DO ESTADO" nullable="0" physicalName="desc_estado" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL19" populated="true" UUID="92c5f364-ad70-4b28-825e-f99171ebb57c" autoIncrement="false" autoIncrementSequenceName="dim_cliente_cod_regiao_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE REGIÃO" nullable="0" physicalName="cod_regiao" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="baef4ba7-a588-469c-8b48-c6aa491fdbf7" autoIncrement="false" autoIncrementSequenceName="dim_cliente_desc_regiao_seq" defaultValue="" name="DESCRITOR DE REGIAO" nullable="0" physicalName="desc_regiao" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="f8383add-4caf-48ec-a199-0403de6322b0" autoIncrement="false" autoIncrementSequenceName="dim_cliente_IDENTIFICADOR NATUAL DO SEGMENTO_seq" defaultValue="" name="IDENTIFICADOR NATUAL DO SEGMENTO" nullable="0" physicalName="IDENTIFICADOR NATUAL DO SEGMENTO" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="198a7e80-56c8-4451-a257-63ce5d8e298a" autoIncrement="false" autoIncrementSequenceName="dim_cliente_desc_segmento_seq" defaultValue="" name="DESCRITOR DE SEGMENTO" nullable="0" physicalName="desc_segmento" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB103" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB102" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB104" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX23" populated="true" UUID="6f28d71e-4c54-4b84-9bcd-ecefe1a023b2" clustered="false" name="dim_cliente_pk" physicalName="dim_cliente_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC24" populated="true" UUID="e5d09fc8-5d9e-4be1-996d-c6b5936e3d82" ascendingOrDescending="UNSPECIFIED" column-ref="COL11" name=" IDENTIFICADOR PRIMÁRIO DE CLIENTE" physicalName="id_cliente" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB25" populated="true" UUID="4030196a-b919-4875-9c00-9671a5cc6c95" name="DIMENSÃO PRODUTO - PRODUTO" objectType="TABLE" physicalName="dim_produto" >
+   <remarks></remarks>
+   <folder id="FOLTAB251" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL26" populated="true" UUID="4aaa52eb-7c4f-4eac-a325-b8f63319cba0" autoIncrement="false" autoIncrementSequenceName="dim_produto_id_produto_seq" defaultValue="" name="IDENTIFICADOR PRIMÁRIO DE PRODUTO" nullable="0" physicalName="id_produto" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="14caca20-cc97-4030-bc0a-cc2884817c74" autoIncrement="false" autoIncrementSequenceName="dim_produto_cod_produto_seq" defaultValue="" name="IDENTIFICADOR NATURAL DO PRODUTO" nullable="0" physicalName="cod_produto" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="a61f7d10-5201-479c-8a4d-b59930681ae4" autoIncrement="false" autoIncrementSequenceName="dim_produto_desc_produto_seq" defaultValue="" name="DESCRITOR DE PRODUTO" nullable="0" physicalName="desc_produto" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="d6f7f43d-9720-468f-91c3-a4c85b9d799a" autoIncrement="false" autoIncrementSequenceName="dim_produto_atr_unidade_medida_seq" defaultValue="" name="ATRIBUTO UNIDADE DE MEDIDA" nullable="0" physicalName="atr_unidade_medida" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="1b2aa7d3-cb9f-4652-9024-986b85627e92" autoIncrement="false" autoIncrementSequenceName="dim_produto_cod_fornecedor_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE FORNECEDOR" nullable="0" physicalName="cod_fornecedor" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL31" populated="true" UUID="391f8746-fc85-43e8-879e-17fa50006c7b" autoIncrement="false" autoIncrementSequenceName="dim_produto_cod_setor_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE SETOR" nullable="0" physicalName="cod_setor" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB253" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB252" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB254" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX32" populated="true" UUID="eb9666aa-8aef-4cf9-aaa7-7beb916034be" clustered="false" name="dim_produto_pk" physicalName="dim_produto_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC33" populated="true" UUID="9b039a05-0281-4c87-8d71-f4bcce3e46d5" ascendingOrDescending="UNSPECIFIED" column-ref="COL26" name="IDENTIFICADOR PRIMÁRIO DE PRODUTO" physicalName="id_produto" />
+    </index>
+   </folder>
+  </table>
   <relationships>
   </relationships>
  </target-database>
@@ -50,6 +132,8 @@
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="138" y="233" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB10" x="139" y="359" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB25" x="139" y="570" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
