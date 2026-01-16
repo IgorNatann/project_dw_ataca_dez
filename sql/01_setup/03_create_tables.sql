@@ -54,7 +54,7 @@ CREATE TABLE dbo.dim_cliente (
 )
 
 CREATE TABLE dbo.dim_empresa (
-                id_loja INT NOT NULL,
+                id_loja INT IDENTITY(1,1) NOT NULL,
                 cod_loja VARCHAR(25) NOT NULL,
                 desc_loja VARCHAR(200) NOT NULL,
                 atr_tipo_loja VARCHAR(50) NOT NULL,
