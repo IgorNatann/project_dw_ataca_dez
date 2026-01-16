@@ -92,7 +92,7 @@ REFERENCES dbo.dim_produto (id_produto)
 
 ALTER TABLE dbo.fact_venda ADD CONSTRAINT dim_cliente_fact_venda_fk
 FOREIGN KEY (id_clientes)
-REFERENCES dbo.dim_cliente (id_clientes)
+REFERENCES dbo.dim_cliente (id_cliente)
 
 ALTER TABLE dbo.fact_venda ADD CONSTRAINT dim_empresa_fact_venda_fk
 FOREIGN KEY (id_loja)
