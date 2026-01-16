@@ -7,7 +7,7 @@ CREATE TABLE dbo.dim_tempo (
                 atr_fim_de_semana BIT NOT NULL,
                 cod_mes VARCHAR(25) NOT NULL,
                 desc_mes VARCHAR(200) NOT NULL,
-                cod_trimestre VARCHAR NOT NULL,
+                cod_trimestre VARCHAR(25) NOT NULL,
                 desc_trimestre VARCHAR(200) NOT NULL,
                 cod_semestre VARCHAR(25) NOT NULL,
                 desc_semestre VARCHAR(200) NOT NULL,
