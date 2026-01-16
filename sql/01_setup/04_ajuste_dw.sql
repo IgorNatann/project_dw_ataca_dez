@@ -116,3 +116,40 @@ SET IDENTITY_INSERT [dbo].[dim_empresa] OFF
 GO
 
 SELECT * FROM [dbo].[dim_empresa];
+GO
+
+SET IDENTITY_INSERT [dbo].[dim_tempo] ON
+GO
+
+INSERT INTO [dbo].[dim_tempo]
+           ([id_dia]
+           ,[cod_dia]
+           ,[data]
+           ,[atr_dia_semana]
+           ,[atr_fim_de_semana]
+           ,[cod_mes]
+           ,[desc_mes]
+           ,[cod_trimestre]
+           ,[desc_trimestre]
+           ,[cod_semestre]
+           ,[desc_semestre]
+           ,[cod_ano])
+     VALUES
+           (0
+           ,'ND'
+           ,'1900-01-01 00:00:00'
+           ,'ND'
+           ,0
+           ,'ND'
+           ,'ND'
+           ,'ND'
+           ,'ND'
+           ,'ND'
+           ,'ND'
+           ,'ND')
+GO
+
+SET IDENTITY_INSERT [dbo].[dim_tempo] OFF
+GO
+
+SELECT * FROM [dbo].[dim_tempo];
