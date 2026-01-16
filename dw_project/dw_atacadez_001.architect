@@ -124,6 +124,96 @@
     </index>
    </folder>
   </table>
+  <table id="TAB34" populated="true" UUID="68706dcf-62d5-44ff-9668-03bc1dc8ffd5" name="DIMENSÃO PRODUTO - FORNECEDOR" objectType="TABLE" physicalName="dim_fornecedor" >
+   <remarks></remarks>
+   <folder id="FOLTAB341" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL35" populated="true" UUID="5ffb162b-a5d8-4221-936d-9252567b15b5" autoIncrement="false" autoIncrementSequenceName="dim_fornecedor_cod_fornecedor_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE FORNECEDOR" nullable="0" physicalName="cod_fornecedor" precision="25" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="98914e7f-e398-4b79-8c0c-a28c680212d3" autoIncrement="false" autoIncrementSequenceName="dim_fornecedor_desc_fornecedor_seq" defaultValue="" name="DESCRITOR DE FORNECEDOR" nullable="0" physicalName="desc_fornecedor" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB343" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB342" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB344" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX37" populated="true" UUID="4bc7652f-2e9d-4395-973d-50562dc2df7f" clustered="false" name="dim_fornecedor_pk" physicalName="dim_fornecedor_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC38" populated="true" UUID="253af3f5-121f-4027-a259-1cd745032e97" ascendingOrDescending="UNSPECIFIED" column-ref="COL35" name="IDENTIFICADOR NATURAL DE FORNECEDOR" physicalName="cod_fornecedor" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB39" populated="true" UUID="fec2228f-a6cd-43d1-878b-b5e61904cc61" name="DIMENSÃO PRODUTO - DEPARTAMENTO" objectType="TABLE" physicalName="dim_departamento" >
+   <remarks></remarks>
+   <folder id="FOLTAB391" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL40" populated="true" UUID="aa5c2409-6531-4cce-9a2c-3fb74cc99973" autoIncrement="false" autoIncrementSequenceName="dim_departamento_cod_setor_seq" defaultValue="" name="IDENTIFICADOR NATUAL DE SETOR" nullable="0" physicalName="cod_setor" precision="25" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL41" populated="true" UUID="86e1158a-d947-4e80-8d21-f5d7f35473ca" autoIncrement="false" autoIncrementSequenceName="dim_departamento_desc_setor_seq" defaultValue="" name="DESCRITOR DE SETOR" nullable="0" physicalName="desc_setor" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB393" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB392" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB394" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX42" populated="true" UUID="8023ee46-6172-4673-896a-788665d0e29c" clustered="false" name="dim_departamento_pk" physicalName="dim_departamento_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC43" populated="true" UUID="6be1bd96-5099-48a4-ad91-24f5e651ca1c" ascendingOrDescending="UNSPECIFIED" column-ref="COL40" name="IDENTIFICADOR NATUAL DE SETOR" physicalName="cod_setor" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB44" populated="true" UUID="86d5df24-30f4-45e4-b70f-3fc6e277e632" name="DIMENSÃO TEMPO" objectType="TABLE" physicalName="dim_tempo" >
+   <remarks>					</remarks>
+   <folder id="FOLTAB441" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL45" populated="true" UUID="369e056d-3797-45aa-ab4f-ee181b2e8b81" autoIncrement="false" autoIncrementSequenceName="dim_tempo_id_dia_seq" defaultValue="" name="IDENTIFICADOR PRIMÁRIO DO DIA" nullable="0" physicalName="id_dia" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL46" populated="true" UUID="7c87e6ff-3234-40f0-94cd-a05c3e880c85" autoIncrement="false" autoIncrementSequenceName="dim_tempo_cod_dia_seq" defaultValue="" name="IDENTIFICADOR NATURAL DO DIA" nullable="0" physicalName="cod_dia" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL47" populated="true" UUID="30451afe-f957-4b9a-97f9-f9a3010a58a6" autoIncrement="false" autoIncrementSequenceName="dim_tempo_data_seq" defaultValue="" name="DATA DO DIA" nullable="0" physicalName="data" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL48" populated="true" UUID="81c482c4-4861-4776-acfc-0fe98208714d" autoIncrement="false" autoIncrementSequenceName="dim_tempo_atr_dia_semana_seq" defaultValue="" name="ATRIBUTO DO DIA DA SEMANA" nullable="0" physicalName="atr_dia_semana" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL49" populated="true" UUID="11aab803-d812-4601-8c4d-a70edc97328f" autoIncrement="false" autoIncrementSequenceName="dim_tempo_atr_fim_de_semana_seq" defaultValue="" name="ATRIBUTO DE FIM DE SEMANA" nullable="0" physicalName="atr_fim_de_semana" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="16" userDefinedTypeUUID="a26374aa-3026-4bb8-b564-eb2e186dfa5d" >
+     <remarks></remarks>
+    </column>
+    <column id="COL50" populated="true" UUID="36eae9c6-13f9-4eb0-b300-9765360e5542" autoIncrement="false" autoIncrementSequenceName="dim_tempo_cod_mes_seq" defaultValue="" name="IDENTIFICADOR NATURAL DO MES" nullable="0" physicalName="cod_mes" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL51" populated="true" UUID="2be2c86f-429d-4fa3-a8ab-bf67e12bfc53" autoIncrement="false" autoIncrementSequenceName="dim_tempo_desc_mes_seq" defaultValue="" name="DESCRITOR DO MES" nullable="0" physicalName="desc_mes" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL52" populated="true" UUID="e67ff9ef-c548-417f-88e2-58ba12a5cd73" autoIncrement="false" autoIncrementSequenceName="dim_tempo_cod_trimestre_seq" defaultValue="" name="IDENTIFICADOR NATURAL DO TRIMESTRE" nullable="0" physicalName="cod_trimestre" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL53" populated="true" UUID="8359a80d-b65e-4170-b8d3-984124a2a437" autoIncrement="false" autoIncrementSequenceName="dim_tempo_desc_trimestre_seq" defaultValue="" name="DESCRITOR DO TRIMESTRE" nullable="0" physicalName="desc_trimestre" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="29c01241-ac34-42cf-a1ce-588574f560af" autoIncrement="false" autoIncrementSequenceName="dim_tempo_cod_semestre_seq" defaultValue="" name="IDENTIFICADOR NATURAL DO SEMESTRE" nullable="0" physicalName="cod_semestre" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL55" populated="true" UUID="0a833037-85c1-4d49-994d-b21fdf2abe27" autoIncrement="false" autoIncrementSequenceName="dim_tempo_desc_semestre_seq" defaultValue="" name="DESCRITOR DO SEMESTRE" nullable="0" physicalName="desc_semestre" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL56" populated="true" UUID="cf596cfb-e36f-47bd-aeec-3b5ec8aca220" autoIncrement="false" autoIncrementSequenceName="dim_tempo_cod_ano_seq" defaultValue="" name="IDENTIFICADOR NATURAL DO ANO" nullable="0" physicalName="cod_ano" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB443" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB442" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB444" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX57" populated="true" UUID="1be3b392-2cf5-42fb-8b14-d861f588f6f3" clustered="false" name="dim_tempo_pk" physicalName="dim_tempo_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC58" populated="true" UUID="a81ecb1d-1ca8-4218-98c5-c1fd580d64aa" ascendingOrDescending="UNSPECIFIED" column-ref="COL45" name="IDENTIFICADOR PRIMÁRIO DO DIA" physicalName="id_dia" />
+    </index>
+   </folder>
+  </table>
   <relationships>
   </relationships>
  </target-database>
@@ -131,9 +221,12 @@
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB1" x="138" y="233" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB10" x="139" y="359" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB25" x="139" y="571" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1" x="144" y="47" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB10" x="144" y="168" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB25" x="141" y="379" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB34" x="138" y="717" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB39" x="136" y="790" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB44" x="140" y="506" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
