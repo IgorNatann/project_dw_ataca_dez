@@ -63,3 +63,29 @@ INSERT INTO [dbo].[dim_fornecedor]
 GO
 
 SELECT * FROM [dbo].[dim_fornecedor];
+
+USE [DW_ATACADEZ]
+GO
+
+SET IDENTITY_INSERT [dbo].[dim_produto] ON
+
+INSERT INTO [dbo].[dim_produto]
+           ([id_produto]
+           ,[cod_produto]
+           ,[desc_produto]
+           ,[atr_unidade_medida]
+           ,[cod_fornecedor]
+           ,[cod_setor])
+     VALUES
+           (0
+           ,'ND'
+           ,'ND'
+           ,'ND'
+           ,'ND'
+           ,'ND')
+GO
+
+SET IDENTITY_INSERT [dbo].[dim_produto] OFF
+GO
+
+SELECT * FROM [dbo].[dim_produto];
