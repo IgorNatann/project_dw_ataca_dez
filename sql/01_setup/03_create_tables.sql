@@ -1,6 +1,6 @@
 
 CREATE TABLE dbo.dim_tempo (
-                id_dia INT NOT NULL,
+                id_dia INT IDENTITY(1,1) NOT NULL,
                 cod_dia VARCHAR(25) NOT NULL,
                 data DATETIME NOT NULL,
                 atr_dia_semana VARCHAR(50) NOT NULL,
