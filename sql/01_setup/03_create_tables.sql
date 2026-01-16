@@ -77,35 +77,23 @@ CREATE TABLE dbo.fact_venda (
 ALTER TABLE dbo.fact_venda ADD CONSTRAINT dim_tempo_fact_venda_fk
 FOREIGN KEY (id_dia)
 REFERENCES dbo.dim_tempo (id_dia)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
 
 ALTER TABLE dbo.dim_produto ADD CONSTRAINT dim_departamento_dim_produto_fk
 FOREIGN KEY (cod_setor)
 REFERENCES dbo.dim_departamento (cod_setor)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
 
 ALTER TABLE dbo.dim_produto ADD CONSTRAINT dim_fornecedor_dim_produto_fk
 FOREIGN KEY (cod_fornecedor)
 REFERENCES dbo.dim_fornecedor (cod_fornecedor)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
 
 ALTER TABLE dbo.fact_venda ADD CONSTRAINT dim_produto_fact_venda_fk
 FOREIGN KEY (id_produto)
 REFERENCES dbo.dim_produto (id_produto)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
 
 ALTER TABLE dbo.fact_venda ADD CONSTRAINT dim_cliente_fact_venda_fk
 FOREIGN KEY (id_clientes)
 REFERENCES dbo.dim_cliente (id_clientes)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
 
 ALTER TABLE dbo.fact_venda ADD CONSTRAINT dim_empresa_fact_venda_fk
 FOREIGN KEY (id_loja)
 REFERENCES dbo.dim_empresa (id_loja)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
