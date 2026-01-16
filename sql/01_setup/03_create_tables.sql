@@ -28,7 +28,7 @@ CREATE TABLE dbo.dim_fornecedor (
 )
 
 CREATE TABLE dbo.dim_produto (
-                id_produto INT NOT NULL,
+                id_produto INT IDENTITY(1,1) NOT NULL,
                 cod_produto VARCHAR(25) NOT NULL,
                 desc_produto VARCHAR(200) NOT NULL,
                 atr_unidade_medida VARCHAR(50) NOT NULL,
