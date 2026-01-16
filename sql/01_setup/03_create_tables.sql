@@ -38,7 +38,7 @@ CREATE TABLE dbo.dim_produto (
 )
 
 CREATE TABLE dbo.dim_cliente (
-                id_clientes INT NOT NULL,
+                id_cliente INT IDENTITY(1,1) NOT NULL,
                 cod_cliente VARCHAR(25) NOT NULL,
                 desc_cliente VARCHAR(200) NOT NULL,
                 atr_tamanho_cliente VARCHAR(50) NOT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE dbo.dim_cliente (
                 desc_regiao VARCHAR(200) NOT NULL,
                 cod_segmento VARCHAR(25) NOT NULL,
                 desc_segmento VARCHAR(200) NOT NULL,
-                CONSTRAINT dim_cliente_pk PRIMARY KEY (id_clientes)
+                CONSTRAINT dim_cliente_pk PRIMARY KEY (id_cliente)
 )
 
 CREATE TABLE dbo.dim_empresa (
