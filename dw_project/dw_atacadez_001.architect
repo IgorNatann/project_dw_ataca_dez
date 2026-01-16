@@ -75,7 +75,7 @@
     <column id="COL20" populated="true" UUID="baef4ba7-a588-469c-8b48-c6aa491fdbf7" autoIncrement="false" autoIncrementSequenceName="dim_cliente_desc_regiao_seq" defaultValue="" name="DESCRITOR DE REGIAO" nullable="0" physicalName="desc_regiao" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL21" populated="true" UUID="f8383add-4caf-48ec-a199-0403de6322b0" autoIncrement="false" autoIncrementSequenceName="dim_cliente_IDENTIFICADOR NATUAL DO SEGMENTO_seq" defaultValue="" name="IDENTIFICADOR NATUAL DO SEGMENTO" nullable="0" physicalName="IDENTIFICADOR NATUAL DO SEGMENTO" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL21" populated="true" UUID="f8383add-4caf-48ec-a199-0403de6322b0" autoIncrement="false" autoIncrementSequenceName="dim_cliente_cod_segmento_seq" defaultValue="" name="IDENTIFICADOR NATUAL DO SEGMENTO" nullable="0" physicalName="cod_segmento" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL22" populated="true" UUID="198a7e80-56c8-4451-a257-63ce5d8e298a" autoIncrement="false" autoIncrementSequenceName="dim_cliente_desc_segmento_seq" defaultValue="" name="DESCRITOR DE SEGMENTO" nullable="0" physicalName="desc_segmento" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -107,10 +107,10 @@
     <column id="COL29" populated="true" UUID="d6f7f43d-9720-468f-91c3-a4c85b9d799a" autoIncrement="false" autoIncrementSequenceName="dim_produto_atr_unidade_medida_seq" defaultValue="" name="ATRIBUTO UNIDADE DE MEDIDA" nullable="0" physicalName="atr_unidade_medida" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL30" populated="true" UUID="1b2aa7d3-cb9f-4652-9024-986b85627e92" autoIncrement="false" autoIncrementSequenceName="dim_produto_cod_fornecedor_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE FORNECEDOR" nullable="0" physicalName="cod_fornecedor" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL30" populated="true" UUID="1b2aa7d3-cb9f-4652-9024-986b85627e92" autoIncrement="false" autoIncrementSequenceName="dim_produto_cod_fornecedor_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE FORNECEDOR" nullable="0" physicalName="cod_fornecedor" precision="25" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL31" populated="true" UUID="391f8746-fc85-43e8-879e-17fa50006c7b" autoIncrement="false" autoIncrementSequenceName="dim_produto_cod_setor_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE SETOR" nullable="0" physicalName="cod_setor" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL31" populated="true" UUID="391f8746-fc85-43e8-879e-17fa50006c7b" autoIncrement="false" autoIncrementSequenceName="dim_produto_cod_setor_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE SETOR" nullable="0" physicalName="cod_setor" precision="25" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -147,7 +147,7 @@
   <table id="TAB39" populated="true" UUID="fec2228f-a6cd-43d1-878b-b5e61904cc61" name="DIMENSÃO PRODUTO - DEPARTAMENTO" objectType="TABLE" physicalName="dim_departamento" >
    <remarks></remarks>
    <folder id="FOLTAB391" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL40" populated="true" UUID="aa5c2409-6531-4cce-9a2c-3fb74cc99973" autoIncrement="false" autoIncrementSequenceName="dim_departamento_cod_setor_seq" defaultValue="" name="IDENTIFICADOR NATUAL DE SETOR" nullable="0" physicalName="cod_setor" precision="25" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL40" populated="true" UUID="aa5c2409-6531-4cce-9a2c-3fb74cc99973" autoIncrement="false" autoIncrementSequenceName="dim_departamento_cod_setor_seq" defaultValue="" name="IDENTIFICADOR NATURAL DE SETOR" nullable="0" physicalName="cod_setor" precision="25" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL41" populated="true" UUID="86e1158a-d947-4e80-8d21-f5d7f35473ca" autoIncrement="false" autoIncrementSequenceName="dim_departamento_desc_setor_seq" defaultValue="" name="DESCRITOR DE SETOR" nullable="0" physicalName="desc_setor" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -160,7 +160,7 @@
     </folder>
     <folder id="FOLTAB394" populated="true" name="Indices" physicalName="Indices" type="4">
     <index id="IDX42" populated="true" UUID="8023ee46-6172-4673-896a-788665d0e29c" clustered="false" name="dim_departamento_pk" physicalName="dim_departamento_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC43" populated="true" UUID="6be1bd96-5099-48a4-ad91-24f5e651ca1c" ascendingOrDescending="UNSPECIFIED" column-ref="COL40" name="IDENTIFICADOR NATUAL DE SETOR" physicalName="cod_setor" />
+     <index-column id="IDC43" populated="true" UUID="6be1bd96-5099-48a4-ad91-24f5e651ca1c" ascendingOrDescending="UNSPECIFIED" column-ref="COL40" name="IDENTIFICADOR NATURAL DE SETOR" physicalName="cod_setor" />
     </index>
    </folder>
   </table>
@@ -262,26 +262,34 @@
    <relationship id="REL76" populated="true" UUID="29cdd007-0ffe-4523-bafa-346dd9ef866c" deferrability="7" deleteRule="3" fk-table-ref="TAB59" fkCardinality="7" identifying="false" name="dim_produto_fact_venda_fk" physicalName="dim_produto_fact_venda_fk" pk-table-ref="TAB25" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP77" populated="true" UUID="55c6c7d2-c7a2-4bae-ab93-416bcc3cc405" fk-column-ref="COL62" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL26" />
    </relationship>
-   <relationship id="REL78" populated="true" UUID="37e6c561-759a-49bb-96ac-a1dc91574acf" deferrability="7" deleteRule="3" fk-table-ref="TAB59" fkCardinality="7" identifying="false" name="dim_tempo_fact_venda_fk" physicalName="dim_tempo_fact_venda_fk" pk-table-ref="TAB44" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP79" populated="true" UUID="8e03b4a2-e174-471d-9517-3e5e9025f836" fk-column-ref="COL63" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL45" />
+   <relationship id="REL78" populated="true" UUID="75e759e9-2bed-4148-b34f-1ccb405c2230" deferrability="7" deleteRule="3" fk-table-ref="TAB25" fkCardinality="7" identifying="false" name="dim_fornecedor_dim_produto_fk" physicalName="dim_fornecedor_dim_produto_fk" pk-table-ref="TAB34" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP79" populated="true" UUID="5c3dc052-bf3f-4ad2-bfad-b97b51bc3e5a" fk-column-ref="COL30" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL35" />
+   </relationship>
+   <relationship id="REL80" populated="true" UUID="9ac62e28-da77-4d71-8b73-5ccb8886cf3c" deferrability="7" deleteRule="3" fk-table-ref="TAB25" fkCardinality="7" identifying="false" name="dim_departamento_dim_produto_fk" physicalName="dim_departamento_dim_produto_fk" pk-table-ref="TAB39" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP81" populated="true" UUID="a9459ed0-e0d8-4c37-a446-da07fa586a03" fk-column-ref="COL31" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL40" />
+   </relationship>
+   <relationship id="REL82" populated="true" UUID="37e6c561-759a-49bb-96ac-a1dc91574acf" deferrability="7" deleteRule="3" fk-table-ref="TAB59" fkCardinality="7" identifying="false" name="dim_tempo_fact_venda_fk" physicalName="dim_tempo_fact_venda_fk" pk-table-ref="TAB44" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP83" populated="true" UUID="8e03b4a2-e174-471d-9517-3e5e9025f836" fk-column-ref="COL63" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL45" />
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.SQLServer2005DDLGenerator" allow-connection="false" target-catalog="DW_ATACADEZ" target-schema="dbo"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB1" x="257" y="34" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB10" x="1133" y="310" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB25" x="174" y="201" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB34" x="256" y="359" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB39" x="254" y="432" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB44" x="1134" y="68" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB59" x="668" y="229" bgColor="0xc7d0df" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL72" pkConnection="0.911504424778761" fkConnection="0.07874015748031496" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL76" pkConnection="0.5132743362831859" fkConnection="0.48031496062992124" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL78" pkConnection="0.7868020304568528" fkConnection="0.07801418439716312" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
-  <table-link relationship-ref="REL74" pkConnection="0.27918781725888325" fkConnection="0.84251968503937" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+ <play-pen zoom="0.8408964152537144" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="573" y="34" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB10" x="1480" y="103" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB25" x="490" y="201" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB34" x="20" y="206" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB39" x="61" y="323" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB44" x="1477" y="313" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB59" x="984" y="229" bgColor="0xc7d0df" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL72" pkConnection="0.911504424778761" fkConnection="0.18110236220472442" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL76" pkConnection="0.22123893805309736" fkConnection="0.4094488188976378" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL82" pkConnection="0.28426395939086296" fkConnection="0.8346456692913385" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL74" pkConnection="0.7461928934010152" fkConnection="0.09448818897637795" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL78" pkConnection="0.40350877192982454" fkConnection="0.7876106194690266" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL80" pkConnection="0.40350877192982454" fkConnection="0.9203539823008849" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">

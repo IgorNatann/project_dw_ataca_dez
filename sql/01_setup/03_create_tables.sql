@@ -1,3 +1,5 @@
+USE DW_ATACADEZ;
+GO
 
 CREATE TABLE dbo.dim_tempo (
                 id_dia INT IDENTITY(1,1) NOT NULL,
