@@ -89,3 +89,30 @@ SET IDENTITY_INSERT [dbo].[dim_produto] OFF
 GO
 
 SELECT * FROM [dbo].[dim_produto];
+
+USE [DW_ATACADEZ]
+GO
+
+SET IDENTITY_INSERT [dbo].[dim_empresa] ON 
+GO
+
+INSERT INTO [dbo].[dim_empresa]
+           ([id_loja]
+           ,[cod_loja]
+           ,[desc_loja]
+           ,[atr_tipo_loja]
+           ,[cod_empresa]
+           ,[desc_empresa])
+     VALUES
+           (0
+           ,'ND'
+           ,'ND'
+           ,'ND'
+           ,'ND'
+           ,'ND')
+GO
+
+SET IDENTITY_INSERT [dbo].[dim_empresa] OFF
+GO
+
+SELECT * FROM [dbo].[dim_empresa];
