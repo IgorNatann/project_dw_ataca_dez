@@ -51,3 +51,15 @@ GO
 
 SELECT * FROM [dbo].[dim_departamento];
 
+USE [DW_ATACADEZ]
+GO
+
+INSERT INTO [dbo].[dim_fornecedor]
+           ([cod_fornecedor]
+           ,[desc_fornecedor])
+     VALUES
+           ('ND'
+           ,'ND')
+GO
+
+SELECT * FROM [dbo].[dim_fornecedor];
