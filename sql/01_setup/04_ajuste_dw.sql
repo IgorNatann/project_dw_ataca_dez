@@ -36,3 +36,18 @@ SET IDENTITY_INSERT [dbo].[dim_cliente] OFF
 GO
 
 SELECT * FROM [dbo].[dim_cliente];
+
+
+USE [DW_ATACADEZ]
+GO
+
+INSERT INTO [dbo].[dim_departamento]
+           ([cod_setor]
+           ,[desc_setor])
+     VALUES
+           ('ND'
+           ,'ND')
+GO
+
+SELECT * FROM [dbo].[dim_departamento];
+
