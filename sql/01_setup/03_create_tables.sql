@@ -68,9 +68,9 @@ CREATE TABLE dbo.fact_venda (
                 id_clientes INT NOT NULL,
                 id_produto INT NOT NULL,
                 id_dia INT NOT NULL,
-                quantidade_vendida REAL NOT NULL,
-                valor_venda REAL NOT NULL,
-                custo_venda REAL NOT NULL,
+                quantidade_vendida FLOAT NOT NULL,
+                valor_venda FLOAT NOT NULL,
+                custo_venda FLOAT NOT NULL,
                 CONSTRAINT fact_venda_pk PRIMARY KEY (id_loja, id_clientes, id_produto, id_dia)
 )
 
