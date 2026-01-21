@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="ca14c486-48b0-4636-a89b-5e7bcadd2e34" ChangeDateTime="01/16/2026 23:04:30">
+    <Property Name="ElementName" Value="[dbo].[tbl_empresa].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_empresa]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="cod_loja" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d0176612-4a30-402d-a216-41ad25026cc9" ChangeDateTime="01/21/2026 21:51:34">
+    <Property Name="ElementName" Value="[dbo].[tbl_cliente].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_cliente]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="cod_cliente" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="71c78801-36a9-4656-94b5-4731787b162d" ChangeDateTime="01/21/2026 21:52:44">
+    <Property Name="ElementName" Value="[dbo].[tbl_cliente].[faturamente]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_cliente]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="faturamento" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="efa3a16d-63ee-4a94-bbf8-09e47e7d8028" ChangeDateTime="01/21/2026 21:54:28">
+    <Property Name="ElementName" Value="[dbo].[tbl_cliente].[desc_idade]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_cliente]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="desc_cidade" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="15f7aa51-f919-4d29-b09d-6a5ba1ac4cfe" ChangeDateTime="01/21/2026 22:12:58">
+    <Property Name="ElementName" Value="[dbo].[tbl_produtos].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_produtos]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="cod_produto" />
+  </Operation>
+</Operations>
