@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="carga_datalake"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{1B4EEE8F-7ED5-46E9-BF92-1E61062B0209}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{963062CA-8FCE-4A43-969D-46DEE911FC0B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -188,55 +188,6 @@
                       refId="Package\carga_empresas\acrescentar_colunas_metadados.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\carga_empresas\acrescentar_colunas_metadados.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\carga_empresas\Coluna Derivada"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Coluna Derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
-              description="Cria novos valores de coluna aplicando expressões a colunas de entrada da transformação. Crie novas colunas ou substitua as existentes. Por exemplo, concatene os valores das colunas 'first name' e 'last name' para formar uma coluna 'full name'."
-              name="Coluna Derivada"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\carga_empresas\Coluna Derivada.Inputs[Entrada de Coluna Derivada]"
-                  description="Entrada para a Transformação Coluna Derivada"
-                  name="Entrada de Coluna Derivada">
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\carga_empresas\Coluna Derivada.Outputs[Saída de Coluna Derivada]"
-                  description="Saída Padrão da Transformação Coluna Derivada"
-                  exclusionGroup="1"
-                  name="Saída de Coluna Derivada"
-                  synchronousInputId="Package\carga_empresas\Coluna Derivada.Inputs[Entrada de Coluna Derivada]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\carga_empresas\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada]"
-                  description="Saída de Erro da Transformação Coluna Derivada"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Saída de Erro de Coluna Derivada"
-                  synchronousInputId="Package\carga_empresas\Coluna Derivada.Inputs[Entrada de Coluna Derivada]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\carga_empresas\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\carga_empresas\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\carga_empresas\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\carga_empresas\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -452,11 +403,6 @@
           </components>
           <paths>
             <path
-              refId="Package\carga_empresas.Paths[Saída de Coluna Derivada]"
-              endId="Package\carga_empresas\Coluna Derivada.Inputs[Entrada de Coluna Derivada]"
-              name="Saída de Coluna Derivada"
-              startId="Package\carga_empresas\acrescentar_colunas_metadados.Outputs[Saída de Coluna Derivada]" />
-            <path
               refId="Package\carga_empresas.Paths[Saída de Origem de Arquivo Simples]"
               endId="Package\carga_empresas\acrescentar_colunas_metadados.Inputs[Entrada de Coluna Derivada]"
               name="Saída de Origem de Arquivo Simples"
@@ -489,7 +435,7 @@
     design-time-name="Package\carga_empresas">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="232,42"
           Id="Package\carga_empresas\conexao_arquivo_empresa-csv"
@@ -519,34 +465,6 @@
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="52.25,5,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="161,42"
-          Id="Package\carga_empresas\Coluna Derivada"
-          TopLeft="847.461538461538,88.9230769230769" />
-        <EdgeLayout
-          Id="Package\carga_empresas.Paths[Saída de Coluna Derivada]"
-          TopLeft="691,111.461538461538">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="156.461538461538,0"
-              Start="0,0"
-              End="148.961538461538,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="148.961538461538,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="66.4807692307692,5,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
